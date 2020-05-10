@@ -1,10 +1,10 @@
 /* main.c - Calculate the average of three numbers.
 
-   Copyright (c) <year>, <author(s)-name>  <email(s)>
+   Copyright (c) 2020, Rafael Vieira de Santana  rafael_vieira@usp.br
    
-   This file is part of <project>
+   This file is part of Average Calculator
    
-   <project> is free software: you can redistribute it and/or modify
+   Average Calculator is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
    the Free Software Foundation, either version 3 of the License, or
    (at your option) any later version.
@@ -24,7 +24,7 @@
 
 float average(float a, float b, float c)
 {
-  return 0;
+  return (a+b+c)/3; /*The function calculates the sum of a, b and c, then divides it by 3.*/
 }
 
 /* This program outputs the average of three values. */
@@ -39,6 +39,8 @@ int main()
   v3 = 60; 
   
   result = average (v1, v2, v3);
+  
+  printf("The average of the values:\n\n - %.2f;\n - %.2f;\n - %.2f.\n\nis %.2f.\n", v1, v2, v3, result);
 
   return 0 ;
 }
