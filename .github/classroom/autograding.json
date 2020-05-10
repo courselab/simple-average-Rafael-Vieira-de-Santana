@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "Compilation test",
+      "setup": "",
+      "run": "gcc -Wall -Werror -Wno-unused main.c -o main",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "Execution test",
+      "setup": "",
+      "run": "./main",
+      "input": "",
+      "output": "30.00",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 8
+    }
+  ]
+}
